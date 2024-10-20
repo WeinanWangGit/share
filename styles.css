@@ -43,10 +43,20 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-.qrcode {
-    width: 150px;
-    height: 150px;
-    margin: 10px 0;
+.qr-codes {
+    display: flex;
+    justify-content: space-around; /* 或者 space-between, space-evenly 等 */
+    flex-wrap: wrap; /* 在小屏幕上换行 */
+}
+
+.qr-code {
+    text-align: center;
+    margin: 10px;
+}
+
+.qr-code img {
+    width: 150px; /* 控制图片宽度 */
+    height: 150px; /* 控制图片高度 */
 }
 
 footer {
