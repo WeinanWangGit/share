@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的网盘分享</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('链接已复制到剪贴板！');
+            }, () => {
+                alert('复制失败，请手动复制。');
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -15,20 +24,35 @@
     <section class="links">
         <h2>网盘链接</h2>
         <ul>
-            <li>【超级会员V6】通过百度网盘分享的文件：A man ca...
-                链接：https://pan.baidu.com/s/15UW3nIN3Wx6AClOPhFn1pw?pwd=c7q6 
-                提取码：c7q6 
-                复制这段内容打开「百度网盘APP 即可获取」</li>
-            <li>【超级会员V6】通过百度网盘分享的文件：A man ca...等2个文件
-                链接：https://pan.baidu.com/s/1JW_HZNp3n3J69n6ospR7NQ?pwd=8426 
-                提取码：8426 
-                复制这段内容打开「百度网盘APP 即可获取」</li>
-            <li><a href="https://link3.com">网盘链接 3</a></li>
+            <li>
+                <strong>China Reader 合集</strong>：
+                <span>链接：<a href="https://pan.baidu.com/s/15UW3nIN3Wx6AClOPhFn1pw?pwd=c7q6" target="_blank">https://pan.baidu.com/s/15UW3nIN3Wx6AClOPhFn1pw?pwd=c7q6</a></span>
+                <button onclick="copyToClipboard('【超级会员V6】通过百度网盘分享的文件：A man ca...
+链接：https://pan.baidu.com/s/15UW3nIN3Wx6AClOPhFn1pw?pwd=c7q6 
+提取码：c7q6 
+复制这段内容打开「百度网盘APP 即可获取」')">复制</button>
+            </li>
+            <li>
+                <strong>everything you need to ace</strong>：
+                <span>链接：<a href="https://pan.baidu.com/s/1JW_HZNp3n3J69n6ospR7NQ?pwd=8426" target="_blank">https://pan.baidu.com/s/1JW_HZNp3n3J69n6ospR7NQ?pwd=8426</a></span>
+                <button onclick="copyToClipboard('【超级会员V6】通过百度网盘分享的文件：A man ca...等2个文件
+链接：https://pan.baidu.com/s/1JW_HZNp3n3J69n6ospR7NQ?pwd=8426 
+提取码：8426 
+复制这段内容打开「百度网盘APP 即可获取」')">复制</button>
+            </li>
+            <li>
+                <strong>Horrible Histories合集</strong>：
+                <span>链接：<a href="https://pan.baidu.com/s/1fSny5j51ryv0Rj8CWfZ9GQ?pwd=p6w7">https://pan.baidu.com/s/1fSny5j51ryv0Rj8CWfZ9GQ?pwd=p6w7</a></span>
+                <button onclick="copyToClipboard('【超级会员V6】通过百度网盘分享的文件：Horrible...
+链接：https://pan.baidu.com/s/1fSny5j51ryv0Rj8CWfZ9GQ?pwd=p6w7 
+提取码：p6w7 
+复制这段内容打开「百度网盘APP 即可获取」')">复制</button>
+            </li>
             <!-- 添加更多链接 -->
         </ul>
     </section>
 
-      <section class="contact">
+    <section class="contact">
         <h2>联系方式</h2>
         <div class="qr-codes">
             <div class="qr-code">
@@ -51,4 +75,3 @@
     </footer>
 </body>
 </html>
-
